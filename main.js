@@ -1,6 +1,7 @@
 // Import utility functions and component functions
 import { createElementWithClass, prependChild } from "./utility.js";
 import { header } from "./Components/header.js";
+import { displayBackground } from "./Components/display.js";
 import { footer } from "./Components/footer.js";
 
 // Main function to set up the page
