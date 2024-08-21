@@ -1,0 +1,31 @@
+@import './Components/global'; // Import global styles
+@import './Components/toggleButton.scss'; // Import toggle button styles
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(Images/stars-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    max-height: 100vh;
+    overflow-y: hidden;
+    transition: all 0.3s ease-in;
+}
+
+// Header styles
+header {
+    padding: 1vw;
+    height: 5%;
+}
+
+// Darth Vader text styles
+#brandText {
+    font-size: 1.7vw;
+    font-family: tiny5;
+    color: white;
+    margin-left: 0.6vw;
+    letter-spacing: 0.1vw;
+    font-weight: 500;
+}
+

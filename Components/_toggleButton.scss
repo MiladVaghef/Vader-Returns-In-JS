@@ -1,0 +1,75 @@
+/* Margin for the navigation container */
+#nav-container {
+    margin-left: 1.4vw;
+}
+
+/* Styles for the toggle icon, including transitions */
+.toggle-icon {
+    display: block;
+    width: 100%;
+    -webkit-transition: margin 600ms;
+    -moz-transition: margin 600ms;
+    transition: margin 600ms;
+    cursor: pointer;
+}
+
+/* Styles for individual bars in the toggle icon */
+.toggle-icon .bar {
+    display: block;
+    width: 3.3vw;
+    height: 0.2vw;
+    margin: 0.8vw;
+    border-right: 2.3vw solid #fff;
+    border-left: 0.7vw solid #d6d6d6;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition-property: -webkit-transform, margin, border-right-color, box-shadow;
+    -moz-transition-property: -moz-transform, margin, border-right-color, box-shadow;
+    transition-property: transform, margin, border-right-color, box-shadow;
+    -webkit-transition-duration: 600ms;
+    -moz-transition-duration: 600ms;
+    transition-duration: 600ms;
+}
+
+/* Transition effect for the first bar */
+.toggle-icon .bar:nth-of-type(1) {
+    -webkit-transition: opacity 300ms;
+    -moz-transition: opacity 300ms;
+    transition: opacity 300ms;
+}
+
+/* Styles for the bars when the toggle icon is in the "pushed" state */
+.pushed .bar:nth-of-type(1) {
+    opacity: 0;
+    position: absolute;
+    top: -1vw;
+}
+
+.pushed .bar:nth-of-type(2) {
+    margin-left: 1.5vw;
+    -webkit-transform: rotate(-137deg) translateY(-1vw);
+    -moz-transform: rotate(-137deg) translateY(-1vw);
+    -ms-transform: rotate(-137deg) translateY(-1vw);
+    -o-transform: rotate(-137deg) translateY(-1vw);
+    transform: rotate(-137deg) translateY(-1.4vw);
+}
+
+.pushed .bar:nth-of-type(3) {
+    -webkit-transform: rotate(-42deg);
+    -moz-transform: rotate(-42deg);
+    -ms-transform: rotate(-42deg);
+    -o-transform: rotate(-42deg);
+    transform: rotate(-42deg);
+}
+
+/* Hover effects for the toggle icon when it is "pushed" */
+.pushed .toggle-icon:hover .bar:nth-of-type(2) {
+    border-right-color: #e9b8b9;
+    box-shadow: 0.4vw 0 0.6vw 0.1vw rgba(205,40,44,0.75);
+}
+
+.pushed .toggle-icon:hover .bar:nth-of-type(3) {
+    border-right-color: #ddf1da;
+    box-shadow: 0.4vw 0 0.6vw 0.1vw rgba(83,228,68,0.65);
+}
