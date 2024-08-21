@@ -1,0 +1,29 @@
+/* Define the Tiny5 font */
+@font-face {
+    font-family: tiny5;
+    src: url(../Fonts/Tiny5-Regular.ttf);
+}
+
+/* Define the GoodTimes font */
+@font-face {
+    font-family: GoodTimes;
+    src: url(../Fonts/good\ times\ rg.otf);
+}
+
+/* Define the Anonymous font */
+@font-face {
+    font-family: Anonymous;
+    src: url(../Fonts/AnonymousPro-Regular.ttf);
+}
+
+/* Flexbox row layout */
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Flexbox column layout */
+.column {
+    display: flex;
+    flex-direction: column;
+}
