@@ -1,7 +1,7 @@
 /* Define the Tiny5 font */
 @font-face {
   font-family: tiny5;
-  src: url(../Fonts/Tiny5-Regular.ttf);
+  src: url(./Fonts/Tiny5-Regular.ttf);
 }
 /* Define the GoodTimes font */
 @font-face {
