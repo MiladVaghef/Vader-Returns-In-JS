@@ -29,3 +29,41 @@ header {
     font-weight: 500;
 }
 
+// Main content styles
+main {
+    height: 70%;
+    position: relative;
+    display: block;
+}
+
+// Display text styles
+#displayText {
+    margin: 0%;
+    margin-left: 3vw;
+    font-weight: 100;
+    font-family: tiny5;
+    color: white;
+    font-size: 14vw;
+    letter-spacing: 1vw;
+}
+
+// Death Star image styles
+#deathStarImg {
+    width: 35vw;
+    position: absolute;
+    top: -11%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+// Darth Vader image styles
+#darthVaderImg {
+    width: 50vw;
+    position: absolute;
+    bottom: -35%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+

@@ -1,1 +1,143 @@
-/*# sourceMappingURL=style.css.map */
+/* Define the Tiny5 font */
+@font-face {
+  font-family: tiny5;
+  src: url(../Fonts/Tiny5-Regular.ttf);
+}
+/* Define the GoodTimes font */
+@font-face {
+  font-family: GoodTimes;
+  src: url(../Fonts/good\ times\ rg.otf);
+}
+/* Define the Anonymous font */
+@font-face {
+  font-family: Anonymous;
+  src: url(../Fonts/AnonymousPro-Regular.ttf);
+}
+/* Flexbox row layout */
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Flexbox column layout */
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Margin for the navigation container */
+#nav-container {
+  margin-left: 1.4vw;
+}
+
+/* Styles for the toggle icon, including transitions */
+.toggle-icon {
+  display: block;
+  width: 100%;
+  transition: margin 600ms;
+  cursor: pointer;
+}
+
+/* Styles for individual bars in the toggle icon */
+.toggle-icon .bar {
+  display: block;
+  width: 3.3vw;
+  height: 0.2vw;
+  margin: 0.8vw;
+  border-right: 2.3vw solid #fff;
+  border-left: 0.7vw solid #d6d6d6;
+  box-sizing: border-box;
+  transition-property: transform, margin, border-right-color, box-shadow;
+  transition-duration: 600ms;
+}
+
+/* Transition effect for the first bar */
+.toggle-icon .bar:nth-of-type(1) {
+  transition: opacity 300ms;
+}
+
+/* Styles for the bars when the toggle icon is in the "pushed" state */
+.pushed .bar:nth-of-type(1) {
+  opacity: 0;
+  position: absolute;
+  top: -1vw;
+}
+
+.pushed .bar:nth-of-type(2) {
+  margin-left: 1.5vw;
+  transform: rotate(-137deg) translateY(-1.4vw);
+}
+
+.pushed .bar:nth-of-type(3) {
+  transform: rotate(-42deg);
+}
+
+/* Hover effects for the toggle icon when it is "pushed" */
+.pushed .toggle-icon:hover .bar:nth-of-type(2) {
+  border-right-color: #e9b8b9;
+  box-shadow: 0.4vw 0 0.6vw 0.1vw rgba(205, 40, 44, 0.75);
+}
+
+.pushed .toggle-icon:hover .bar:nth-of-type(3) {
+  border-right-color: #ddf1da;
+  box-shadow: 0.4vw 0 0.6vw 0.1vw rgba(83, 228, 68, 0.65);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(Images/stars-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  max-height: 100vh;
+  overflow-y: hidden;
+  transition: all 0.3s ease-in;
+}
+
+header {
+  padding: 1vw;
+  height: 5%;
+
+#brandText {
+  font-size: 1.7vw;
+  font-family: tiny5;
+  color: white;
+  margin-left: 0.6vw;
+  letter-spacing: 0.1vw;
+  font-weight: 500;
+}
+
+main {
+  height: 70%;
+  position: relative;
+  display: block;
+}
+
+#displayText {
+  margin: 0%;
+  margin-left: 3vw;
+  font-weight: 100;
+  font-family: tiny5;
+  color: white;
+  font-size: 14vw;
+  letter-spacing: 1vw;
+}
+
+#deathStarImg {
+  width: 35vw;
+  position: absolute;
+  top: -11%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+#darthVaderImg {
+  width: 50vw;
+  position: absolute;
+  bottom: -35%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
