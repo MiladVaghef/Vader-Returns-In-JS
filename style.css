@@ -140,4 +140,23 @@ main {
   left: 50%;
   transform: translateX(-50%);
   z-index: 2;
+
+footer {
+  height: 25%;
 }
+
+#descriptionText {
+  margin-left: 6vw;
+  font-weight: 100;
+  width: 19vw;
+  color: white;
+  font-family: GoodTimes;
+}
+#descriptionText h3 {
+  font-size: 1vw;
+  letter-spacing: 0.1vw;
+}
+#descriptionText p {
+  font-family: Anonymous;
+  font-size: 0.9vw;
+}/*# sourceMappingURL=style.css.map */

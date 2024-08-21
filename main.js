@@ -1,6 +1,8 @@
 // Import utility functions and component functions
 import { createElementWithClass, prependChild } from "./utility.js";
 import { header } from "./Components/header.js";
+import { footer } from "./Components/footer.js";
+
 // Main function to set up the page
 function main() {
   // Reference to the body element
@@ -14,5 +16,6 @@ function main() {
 }
 
 // Call functions to setup the page components
+footer();
 main();
 header();

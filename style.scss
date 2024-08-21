@@ -1,4 +1,5 @@
 @import './Components/global'; // Import global styles
+@import './Components/animations'; // Import animations
 @import './Components/toggleButton.scss'; // Import toggle button styles
 
 body {
@@ -67,3 +68,26 @@ main {
     z-index: 2;
 }
 
+// Footer styles
+footer {
+    height: 25%;
+}
+
+// Description text styles in the footer
+#descriptionText {
+    margin-left: 6vw;
+    font-weight: 100;
+    width: 19vw;
+    color: white;
+    font-family: GoodTimes;
+    // Styles for the h3 inside the Description Text
+    h3 {
+        font-size: 1vw;
+        letter-spacing: 0.1vw;
+    }
+    // Styles for the h3 inside the Description Text
+    p {
+        font-family: Anonymous;
+        font-size: 0.9vw;
+    }
+}
