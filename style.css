@@ -25,6 +25,87 @@
   flex-direction: column;
 }
 
+/* Animation for fading in from the left */
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+  }
+  85% {
+    opacity: 0;
+    transform: translateX(-20vw);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0vw);
+  }
+}
+/* Animation for fading in */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  85% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* Animation for zooming in */
+@keyframes zoomIn {
+  0% {
+    width: 70vw;
+    bottom: -55%;
+  }
+  85% {
+    width: 70vw;
+    bottom: -55%;
+  }
+  100% {
+    width: 50vw;
+    bottom: -35%;
+  }
+}
+/* Animation for sliding in from above */
+@keyframes slideInUp {
+  0% {
+    transform: translateY(-20vw);
+  }
+  85% {
+    transform: translateY(-20vw);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0vw);
+    opacity: 1;
+  }
+}
+/* Animation for sliding in from below */
+@keyframes slideInDown {
+  0% {
+    transform: translateY(20vw);
+  }
+  85% {
+    transform: translateY(20vw);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0vw);
+    opacity: 1;
+  }
+}
+/* Animation for floating effect */
+@keyframes floating {
+  0% {
+    transform: translate(-50%, 0);
+  }
+  50% {
+    transform: translate(-50%, 1%);
+  }
+  100% {
+    transform: translate(-50%, 0);
+  }
+}
 /* Margin for the navigation container */
 #nav-container {
   margin-left: 1.4vw;
@@ -98,6 +179,10 @@ body {
 header {
   padding: 1vw;
   height: 5%;
+  animation-name: slideInUp;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+}
 
 #brandText {
   font-size: 1.7vw;
@@ -122,6 +207,8 @@ main {
   color: white;
   font-size: 14vw;
   letter-spacing: 1vw;
+  animation-name: fadeInLeft;
+  animation-duration: 3s;
 }
 
 #deathStarImg {
@@ -131,6 +218,10 @@ main {
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
+  animation-name: floating, fadeIn;
+  animation-duration: 5s, 2.8s;
+  animation-iteration-count: infinite, 1;
+  animation-delay: 3s, 0s;
 }
 
 #darthVaderImg {
@@ -140,6 +231,10 @@ main {
   left: 50%;
   transform: translateX(-50%);
   z-index: 2;
+  animation-name: zoomIn;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+}
 
 footer {
   height: 25%;
@@ -151,6 +246,9 @@ footer {
   width: 19vw;
   color: white;
   font-family: GoodTimes;
+  animation-name: slideInDown;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
 }
 #descriptionText h3 {
   font-size: 1vw;

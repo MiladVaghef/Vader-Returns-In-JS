@@ -1,0 +1,41 @@
+/* Animation for fading in from the left */
+@keyframes fadeInLeft {
+    0% { opacity: 0; }
+    85% { opacity: 0; transform: translateX(-20vw); }
+    100% { opacity: 1; transform: translateX(0vw); }
+}
+
+/* Animation for fading in */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    85% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Animation for zooming in */
+@keyframes zoomIn {
+    0% { width: 70vw; bottom: -55%; }
+    85% { width: 70vw; bottom: -55%; }
+    100% { width: 50vw; bottom: -35%; }
+}
+
+/* Animation for sliding in from above */
+@keyframes slideInUp {
+    0% { transform: translateY(-20vw); }
+    85% { transform: translateY(-20vw); opacity: 0; }
+    100% { transform: translateY(0vw); opacity: 1; }
+}
+
+/* Animation for sliding in from below */
+@keyframes slideInDown {
+    0% { transform: translateY(20vw); }
+    85% { transform: translateY(20vw); opacity: 0; }
+    100% { transform: translateY(0vw); opacity: 1; }
+}
+
+/* Animation for floating effect */
+@keyframes floating {
+    0% { transform: translate(-50%, 0); }
+    50% { transform: translate(-50%, 1%); }
+    100% { transform: translate(-50%, 0); }
+}
