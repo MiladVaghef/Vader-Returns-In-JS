@@ -6,12 +6,12 @@
 /* Define the GoodTimes font */
 @font-face {
   font-family: GoodTimes;
-  src: url(../Fonts/Good-Times.otf);
+  src: url(./Fonts/Good-Times.otf);
 }
 /* Define the Anonymous font */
 @font-face {
   font-family: Anonymous;
-  src: url(../Fonts/AnonymousPro-Regular.ttf);
+  src: url(./Fonts/AnonymousPro-Regular.ttf);
 }
 /* Flexbox row layout */
 .row {

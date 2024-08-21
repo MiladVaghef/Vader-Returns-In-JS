@@ -12,13 +12,13 @@ export function displayBackground() {
   appendChild(main, displayContainer);
 
   // Create an image element for the Death Star and set its ID
-  let deathStar = addImage("../Images/death-star.png");
+  let deathStar = addImage("./Images/death-star.png");
   deathStar.id = "deathStarImg";
   // Append the Death Star image to the displayContainer
   appendChild(displayContainer, deathStar);
 
   // Create an image element for Darth Vader and set its ID
-  let darthVader = addImage("../Images/darth-vader.png");
+  let darthVader = addImage("./Images/darth-vader.png");
   darthVader.id = "darthVaderImg";
   // Append the Darth Vader image to the displayContainer
   appendChild(displayContainer, darthVader);
